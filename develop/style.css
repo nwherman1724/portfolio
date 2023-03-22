@@ -131,10 +131,14 @@ figure {
 }
 
 .card {
+   display:flex;
+   flex-direction: column;
+   justify-content: space-evenly;
    border-radius: 5px;
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    padding: 15px;
-   max-width: 400px;
+   max-width: 42vw;
+   height: 450px;
 }
 
 .cardTitle {
@@ -151,9 +155,19 @@ figure {
 
 .link {
    text-decoration: none;
-   color: black;
+   color: rebeccapurple;
 }
 
+#petstarLink {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+#button-link {
+   color: white;
+   text-decoration: none;
+}
 /* end of project section */
 
 /* start contact bottom */
