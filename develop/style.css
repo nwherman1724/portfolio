@@ -142,8 +142,9 @@ figure {
 }
 
 .cardTitle {
-   text-align: center;
-   margin-bottom: 5px;
+   display: flex;
+   justify-content: center;
+   margin: 10px;
 }
 
 .center {
@@ -151,6 +152,14 @@ figure {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+}
+
+.card img {
+   padding: 10px;
+}
+
+.card p {
+   padding: 10px;
 }
 
 .link {
@@ -164,9 +173,32 @@ figure {
    align-items: center;
 }
 
-#button-link {
+.button-link {
    color: white;
    text-decoration: none;
+}
+
+.button-link a:link {
+   text-decoration: none;
+}
+
+.button-link a:visited {
+   text-decoration: none;
+}
+
+.button-link a:hover {
+   text-decoration: none;
+}
+
+.button-link a:active {
+   text-decoration: none;
+}
+.card-text{
+   text-align: center;
+}
+
+.card-link {
+   margin: 10px;
 }
 /* end of project section */
 
