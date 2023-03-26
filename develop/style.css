@@ -32,11 +32,13 @@ nav li a {
 }
  .button {
     color: white;
+    font-weight: 600;
     background-color: blueviolet;
     border: none;
     border-radius: 50px;
-    height: 30px;
-    width: 100px;
+    height: 40px;
+    width: auto;
+    padding: 10px;
  }
 /* end of navbar styles */
 
@@ -46,7 +48,7 @@ nav li a {
   flex-direction: column;
   justify-content: flex-end;
   background-image: radial-gradient(circle 60vh at 50% 100%, blueviolet, white); 
-  height: 80vh;
+  height: 84vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,7 +95,7 @@ figure {
     justify-content: space-around;
     align-items: center;
     background-color: black;
-    height: 14vh;
+    height: 10vh;
  }
 
  .contact-top li {
@@ -120,12 +122,13 @@ figure {
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 25px;
+   padding-top: 25px;
 }
 
 .deck {
    margin: 20px;
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-around;
    align-items: center;
 }
@@ -133,15 +136,15 @@ figure {
 .card {
    display:flex;
    flex-direction: column;
-   justify-content: space-evenly;
+   justify-content: space-between;
+   margin: 10px;
    border-radius: 5px;
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-   padding: 15px;
-   max-width: 42vw;
-   height: 450px;
+   width: 45vw;
+   height: 500px;
 }
 
-.cardTitle {
+#cardTitle {
    display: flex;
    justify-content: center;
    margin: 10px;
@@ -150,12 +153,12 @@ figure {
 .center {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
 }
 
 .card img {
-   padding: 10px;
+   padding: 0px;
 }
 
 .card p {
@@ -229,3 +232,56 @@ figure {
 }
 
 /* end contact bottom */
+
+@media (max-width: 500px) {
+
+   .hero-text {
+      text-align: center;
+   }
+
+   .card {
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      width: 375px;
+      height: 500px;
+   }
+  
+   .contact-top li {
+      display: inline;
+      padding: 20px;
+   }
+
+   /* .mobile-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 20px;
+   } */
+  
+   .phone {
+      display: none;
+      padding: 0px;
+   }
+
+   .email {
+      display: none;
+      padding: 0px;
+   }
+
+   .github {
+      display: none;
+   }
+
+   .linkedin {
+      display: none;
+   }
+
+   .contact-bottom li {
+      display: inline;
+      padding: 2px;
+   }
+}
