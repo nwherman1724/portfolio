@@ -235,6 +235,8 @@ figure {
 
 @media (max-width: 500px) {
 
+   /* hamburger menu: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
+
    .hero-text {
       text-align: center;
    }
