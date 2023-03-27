@@ -240,6 +240,10 @@ figure {
 
 .aboutText {
    display: flex;
+   text-align: center;
+   width: auto;
+   margin: 10px;
+   width: 50%;
 }
 
 /* End about section */
